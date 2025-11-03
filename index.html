@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multibatec - Énergie Autonome sans Facture | Biogaz + Électricité</title>
+    <meta name="description" content="Transformez votre fosse septique en source d'énergie gratuite. Production biogaz + électricité 24/7. Économisez 565 000 FCFA/an. Installation en 48h.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* CSS intégré pour éviter les problèmes de chargement */
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+        }
+        .btn-primary {
+            background-color: #f97316;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ea580c;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+        }
+        .btn-secondary {
+            background-color: #10b981;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .counter {
+            font-weight: 800;
+            color: #059669;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, -15px); }
+            100% { transform: translate(0, -0px); }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-link {
+            color: #065f46;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #059669;
+        }
+        .logo {
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#accueil" class="flex items-center space-x-2 logo">
+                    <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">M</span>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Multibatec</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                    <a href="#fonctionnement" class="nav-link">Comment ça marche</a>
+                    <a href="#avantages" class="nav-link">Avantages</a>
+                    <a href="#tarifs" class="nav-link">Tarifs</a>
+                    <a href="#temoignages" class="nav-link">Témoignages</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#commander" class="btn-primary px-6 py-2 rounded-full font-semibold">Commander</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-green-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
+                <a href="#accueil" class="block px-4 py-2 text-green-800 font-medium hover:bg-green-50">Accueil</a>
+                <a href="#fonctionnement" class="block px-4 py-2 text-green-800 font-medium hover:bg-green-50">Comment ça marche</a>
+                <a href="#avantages" class="block px-4 py-2 text-green-800 font-medium hover:bg-green-50">Avantages</a>
+                <a href="#tarifs" class="block px-4 py-2 text-green-800 font-medium hover:bg-green-50">Tarifs</a>
+                <a href="#temoignages" class="block px-4 py-2 text-green-800 font-medium hover:bg-green-50">Témoignages</a>
+                <a href="#contact" class="block px-4 py-2 text-green-800 font-medium hover:bg-green-50">Contact</a>
+                <a href="#commander" class="block mx-4 mt-2 btn-primary px-6 py-2 rounded-full font-semibold text-center">Commander</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-gradient pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in">
+                        Transformez vos déchets en énergie pour la vie
+                    </h1>
+                    <p class="text-xl text-white mb-8 fade-in" data-delay="200">
+                        🔥 Biogaz gratuit • ⚡ Électricité autonome • 💧 Eau propre
+                    </p>
+                    <p class="text-white text-lg mb-10 fade-in" data-delay="400">
+                        Sans raccordement. Sans facture.<br>
+                        100% autonome. 100% vous.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 fade-in" data-delay="600">
+                        <a href="#commander" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg text-center">
+                            Calculer mes économies
+                        </a>
+                        <a href="#fonctionnement" class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg text-center">
+                            Voir comment ça marche
+                        </a>
+                    </div>
+                    <p class="text-white mt-6 text-center sm:text-left fade-in" data-delay="800">
+                        👇 Découvrez votre potentiel en 30 secondes
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-white rounded-full flex items-center justify-center shadow-2xl floating">
+                            <div class="text-center">
+                                <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-bolt text-green-600 text-4xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-green-800">Énergie<br>Autonome</h3>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg floating" data-delay="1000">
+                            <i class="fas fa-fire text-white text-xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center shadow-lg floating" data-delay="1500">
+                            <i class="fas fa-tint text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Problème -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 fade-in">
+                VOUS EN AVEZ ASSEZ DE...
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition fade-in" data-delay="200">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-money-bill-wave text-red-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Factures qui explosent</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-2">780 000 FCFA/an</p>
+                    <p class="text-gray-600">en énergie</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition fade-in" data-delay="400">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-power-off text-yellow-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Coupures incessantes</h3>
+                    <p class="text-2xl font-bold text-yellow-600 mb-2">8-12 heures/mois</p>
+                    <p class="text-gray-600">dans le noir</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition fade-in" data-delay="600">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-purple-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Gaz qui augmente</h3>
+                    <p class="text-2xl font-bold text-purple-600 mb-2">+45% en 2 ans</p>
+                    <p class="text-gray-600">le prix</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center fade-in" data-delay="800">
+                <p class="text-xl text-gray-700 mb-6">
+                    72% des Ivoiriens n'ont PAS accès au réseau<br>
+                    Pourquoi payer 400 000 F de branchement + factures mensuelles<br>
+                    quand vous pouvez être <span class="font-bold text-green-600">AUTONOME</span> ?
+                </p>
+                <a href="#commander" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg inline-block">
+                    Je veux être autonome
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Solution -->
+    <section id="fonctionnement" class="section-padding">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4 fade-in">
+                MULTIBATEC : VOTRE ÉNERGIE, VOTRE LIBERTÉ
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto fade-in" data-delay="200">
+                Transformez votre fosse septique en source d'énergie gratuite en 3 étapes simples
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center mb-16">
+                <div class="text-center mb-8 md:mb-0 fade-in" data-delay="400">
+                    <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-green-700">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Vos déchets organiques</h3>
+                </div>
+                
+                <div class="my-4 md:my-0 fade-in" data-delay="500">
+                    <i class="fas fa-arrow-right text-3xl text-green-600 mx-4"></i>
+                </div>
+                
+                <div class="text-center mb-8 md:mb-0 fade-in" data-delay="600">
+                    <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-green-700">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Multibatec transforme</h3>
+                </div>
+                
+                <div class="my-4 md:my-0 fade-in" data-delay="700">
+                    <i class="fas fa-arrow-right text-3xl text-green-600 mx-4"></i>
+                </div>
+                
+                <div class="text-center fade-in" data-delay="800">
+                    <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-green-700">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">3 énergies gratuites</h3>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-8 rounded-2xl text-center border border-green-200 fade-in" data-delay="400">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-fire text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Gaz pour cuisiner</h3>
+                    <p class="text-gray-600">Comme une bonbonne, mais gratuite</p>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-2xl text-center border border-blue-200 fade-in" data-delay="600">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Électricité pour éclairer</h3>
+                    <p class="text-gray-600">24/7, même pendant les coupures</p>
+                </div>
+                
+                <div class="bg-cyan-50 p-8 rounded-2xl text-center border border-cyan-200 fade-in" data-delay="800">
+                    <div class="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tint text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Eau pour arroser</h3>
+                    <p class="text-gray-600">Irrigation gratuite pour votre jardin</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center fade-in" data-delay="1000">
+                <p class="text-lg text-gray-700 mb-6">
+                    Installation en 48h sur votre fosse existante • Production 24/7 pendant 15 ans • Zéro facture mensuelle
+                </p>
+                <a href="#commander" class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg inline-block">
+                    Voir la démo vidéo (2 min)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 fade-in">
+                ILS L'ONT FAIT. POURQUOI PAS VOUS ?
+            </h2>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden mb-16 fade-in">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-green-100 flex items-center justify-center p-8">
+                        <div class="w-32 h-32 bg-green-300 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xl italic text-gray-700 mb-6">
+                            "Depuis 6 mois, je ne paie plus de gaz. Mes enfants étudient le soir sans coupure. Multibatec a changé notre vie."
+                        </p>
+                        <div class="flex items-center">
+                            <div>
+                                <p class="font-bold text-gray-800">Aya K., Yopougon</p>
+                                <p class="text-gray-600">Maman de 3 enfants</p>
+                            </div>
+                            <div class="ml-auto bg-green-100 text-green-800 px-4 py-2 rounded-full font-bold">
+                                9,4/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-2xl shadow-md fade-in" data-delay="200">
+                    <p class="text-3xl font-bold text-green-600 counter" data-target="127">0</p>
+                    <p class="text-gray-600">familles équipées</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md fade-in" data-delay="400">
+                    <p class="text-3xl font-bold text-green-600 counter" data-target="2400">0</p>
+                    <p class="text-gray-600">millions FCFA économisés</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md fade-in" data-delay="600">
+                    <p class="text-3xl font-bold text-green-600 counter" data-target="127">0</p>
+                    <p class="text-gray-600">tonnes CO₂ évitées</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md fade-in" data-delay="800">
+                    <p class="text-3xl font-bold text-green-600 counter" data-target="16000">0</p>
+                    <p class="text-gray-600">kWh produits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section id="avantages" class="section-padding">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 fade-in">
+                POURQUOI CHOISIR MULTIBATEC ?
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-orange-500 fade-in" data-delay="200">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">ÉCONOMIQUE</h3>
+                    <p class="text-2xl font-bold text-orange-600 mb-2">565 000 FCFA/an</p>
+                    <p class="text-gray-600 mb-4">Économies moyennes</p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>ROI : 2,8 ans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Puis gratuit pendant 12 ans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Plus de facture</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Plus de coupure</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-green-500 fade-in" data-delay="400">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">ÉCOLOGIQUE</h3>
+                    <p class="text-2xl font-bold text-green-600 mb-2">3,2 T CO₂/an</p>
+                    <p class="text-gray-600 mb-4">Émissions évitées</p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>= 150 arbres plantés/an</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Crédits carbone 48 000 F/an</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Énergie 100% renouvelable</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Réduction déchets</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 fade-in" data-delay="600">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">SAIN</h3>
+                    <p class="text-2xl font-bold text-blue-600 mb-2">95% pathogènes</p>
+                    <p class="text-gray-600 mb-4">Éliminés</p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Zéro contact avec déchets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Air intérieur 70% plus pur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Eau traitée pour irrigation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Environnement sain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in" data-delay="800">
+                <a href="#commander" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg inline-block">
+                    Calculer MES économies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tarifs -->
+    <section id="tarifs" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4 fade-in">
+                CHOISISSEZ VOTRE FORMULE
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto fade-in" data-delay="200">
+                Une solution adaptée à chaque situation et budget
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition fade-in" data-delay="400">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-credit-card text-orange-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">ACHAT</h3>
+                        <p class="text-3xl font-bold text-orange-600 mt-2">750 000 FCFA</p>
+                        <p class="text-gray-600">(une fois)</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Propriété immédiate</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>ROI 2,8 ans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Maintenance incluse 1 an</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-gift text-orange-500 mt-1 mr-3"></i>
+                            <span class="font-semibold">Promo -20% 100 premiers</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#commander" class="btn-primary w-full py-3 rounded-full font-semibold text-center block">
+                        Commander
+                    </a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-green-500 relative hover:shadow-xl transition fade-in" data-delay="600">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">POPULAIRE</span>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calendar-alt text-green-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">LOCATION</h3>
+                        <p class="text-3xl font-bold text-green-600 mt-2">25 000 F/mois</p>
+                        <p class="text-gray-600">(36 mois)</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>0 apport</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Rentable dès J1 (non racc.)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Maintenance incluse</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Option achat 150K finale</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#commander" class="btn-secondary w-full py-3 rounded-full font-semibold text-center block">
+                        Souscrire
+                    </a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition fade-in" data-delay="800">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-university text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">CRÉDIT</h3>
+                        <p class="text-3xl font-bold text-blue-600 mt-2">28 000 F/mois</p>
+                        <p class="text-gray-600">(30 mois)</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Via mobile money</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Flexible saisonnier</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Propriété finale</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Sans justificatif</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#commander" class="btn-primary w-full py-3 rounded-full font-semibold text-center block">
+                        Simuler
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center bg-green-50 p-6 rounded-2xl border border-green-200 fade-in" data-delay="1000">
+                <p class="text-lg font-semibold text-green-800">
+                    ✨ Prévente : -20% pour les 100 premiers clients ✨
+                </p>
+                <p class="text-green-700 mt-2">
+                    Plus que <span class="font-bold">73</span> places disponibles
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Calculateur -->
+<section class="section-padding">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 fade-in">
+            COMBIEN ALLEZ-VOUS ÉCONOMISER ?
+        </h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-delay="200">
+            <div class="md:flex">
+                <div class="md:w-1/2 bg-green-50 p-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">CALCULATEUR D'ÉCONOMIES</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Nombre de personnes dans le foyer :</label>
+                            <select id="nbPersonnes" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                <option value="2">1-2 personnes</option>
+                                <option value="4" selected>3-5 personnes</option>
+                                <option value="7">6-8 personnes</option>
+                                <option value="10">9+ personnes</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Vous avez déjà l'électricité CIE ?</label>
+                            <div class="flex space-x-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="electricite" value="oui" class="h-5 w-5 text-green-600" checked>
+                                    <span class="ml-2 text-gray-700">Oui</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="electricite" value="non" class="h-5 w-5 text-green-600">
+                                    <span class="ml-2 text-gray-700">Non</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Votre budget énergie actuel (FCFA/mois) :</label>
+                            <input type="number" id="budgetActuel" value="30000" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        
+                        <button id="calculerEconomies" class="btn-primary w-full py-3 rounded-lg font-semibold">
+                            Calculer mes économies
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-green-600 text-white p-8">
+                    <h3 class="text-xl font-bold mb-6">VOS RÉSULTATS</h3>
+                    
+                    <div class="space-y-6" id="resultats">
+                        <div>
+                            <p class="text-lg">Vous économiserez :</p>
+                            <p class="text-3xl font-bold" id="economieMensuelle">48 000 FCFA/mois</p>
+                            <p class="text-lg" id="economieAnnuelle">= 576 000 FCFA/an</p>
+                        </div>
+                        
+                        <div>
+                            <p class="text-lg">ROI :</p>
+                            <p class="text-2xl font-bold" id="roi">2,6 ans</p>
+                        </div>
+                        
+                        <div>
+                            <p class="text-lg">Impact environnemental :</p>
+                            <p class="text-2xl font-bold" id="impactCO2">3,2 T CO₂ évitées/an</p>
+                        </div>
+                        
+                        <div>
+                            <p class="text-lg">Sur 10 ans :</p>
+                            <p class="text-2xl font-bold" id="economieDecennale">5 760 000 FCFA économisés</p>
+                        </div>
+                        
+                        <a href="#commander" class="btn-primary w-full py-3 rounded-lg font-semibold text-center block bg-orange-500 hover:bg-orange-600">
+                            Je commande maintenant !
+                        </a>
+                        
+                        <a href="#contact" class="text-center block text-white underline">
+                            Ou demander un devis gratuit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">PRÊT À DEVENIR AUTONOME ?</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Dans 10 ans, vous vous direz : "Pourquoi j'ai attendu ?"<br>
+                        La technologie existe. Le moment, c'est maintenant.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div id="commander" class="fade-in" data-delay="200">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">PASSER À L'ACTION</h3>
+                        
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Nom complet</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Votre nom">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Téléphone</label>
+                                <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Votre numéro">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Votre email">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Ville</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Votre ville">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Formule souhaitée</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option>Achat (750 000 FCFA)</option>
+                                    <option>Location (25 000 FCFA/mois)</option>
+                                    <option>Crédit (28 000 FCFA/mois)</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full py-4 rounded-lg font-semibold text-lg">
+                                Je passe à l'action maintenant
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="fade-in" data-delay="400">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">CONTACTEZ-NOUS</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Téléphone</p>
+                                    <p class="text-gray-600">+225 07 XX XX XX XX</p>
+                                    <p class="text-sm text-gray-500">Réponse en moins de 2 minutes</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Email</p>
+                                    <p class="text-gray-600">contact@multibatec.ci</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Adresse</p>
+                                    <p class="text-gray-600">Abidjan, Cocody</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-6">
+                                <h4 class="font-semibold text-gray-800 mb-4">Suivez-nous</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                            <span class="text-green-900 font-bold">M</span>
+                        </div>
+                        <span class="text-xl font-bold">Multibatec</span>
+                    </div>
+                    <p class="text-green-200">L'énergie autonome pour tous</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">PRODUIT</h4>
+                    <ul class="space-y-2 text-green-200">
+                        <li><a href="#fonctionnement" class="hover:text-white">Comment ça marche</a></li>
+                        <li><a href="#tarifs" class="hover:text-white">Tarifs</a></li>
+                        <li><a href="#" class="hover:text-white">Application</a></li>
+                        <li><a href="#temoignages" class="hover:text-white">Témoignages</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">ENTREPRISE</h4>
+                    <ul class="space-y-2 text-green-200">
+                        <li><a href="#" class="hover:text-white">Qui sommes-nous</a></li>
+                        <li><a href="#" class="hover:text-white">Notre mission</a></li>
+                        <li><a href="#" class="hover:text-white">Partenaires</a></li>
+                        <li><a href="#" class="hover:text-white">Presse</a></li>
+                        <li><a href="#" class="hover:text-white">Carrières</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">CONTACT</h4>
+                    <ul class="space-y-2 text-green-200">
+                        <li>📧 contact@multibatec.ci</li>
+                        <li>📞 +225 07 XX XX XX XX</li>
+                        <li>📍 Abidjan, Cocody</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-green-800 text-center text-green-300">
+                <p>© 2025 Multibatec BIO CO₂ - Tous droits réservés</p>
+                <p class="mt-2">Fait avec ❤️ en Côte d'Ivoire pour l'Afrique</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('nav-scrolled');
+            } else {
+                header.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Counter animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000; // 2 seconds
+            const step = target / (duration / 16); // 60fps
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 16);
+        }
+
+        // Intersection Observer for counters and fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('counter')) {
+                        animateCounter(entry.target);
+                    }
+                    
+                    // Handle delay attributes
+                    const delay = entry.target.getAttribute('data-delay');
+                    if (delay) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, parseInt(delay));
+                    } else {
+                        entry.target.classList.add('visible');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all counters and fade-in elements
+        document.querySelectorAll('.counter, .fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Calculateur d'économies
+class CalculateurMultibatec {
+    constructor() {
+        this.prixMultibatec = 750000; // Prix d'achat en FCFA
+        this.init();
+    }
+
+    init() {
+        // Événement sur le bouton de calcul
+        document.getElementById('calculerEconomies').addEventListener('click', () => {
+            this.calculerEconomies();
+        });
+
+        // Événements sur les champs pour recalcul automatique
+        document.getElementById('nbPersonnes').addEventListener('change', () => {
+            this.calculerEconomies();
+        });
+
+        document.getElementById('budgetActuel').addEventListener('input', () => {
+            this.calculerEconomies();
+        });
+
+        document.querySelectorAll('input[name="electricite"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                this.calculerEconomies();
+            });
+        });
+
+        // Calcul initial au chargement
+        this.calculerEconomies();
+    }
+
+    calculerEconomies() {
+        // Récupération des valeurs
+        const nbPersonnes = parseInt(document.getElementById('nbPersonnes').value);
+        const budgetActuel = parseInt(document.getElementById('budgetActuel').value) || 0;
+        const aElectricite = document.querySelector('input[name="electricite"]:checked').value === 'oui';
+
+        // Calculs basés sur les données
+        const economieMensuelle = this.calculerEconomieMensuelle(nbPersonnes, budgetActuel, aElectricite);
+        const economieAnnuelle = economieMensuelle * 12;
+        const roi = this.calculerROI(economieAnnuelle);
+        const impactCO2 = this.calculerImpactCO2(nbPersonnes);
+        const economieDecennale = economieAnnuelle * 10;
+
+        // Affichage des résultats
+        this.afficherResultats(economieMensuelle, economieAnnuelle, roi, impactCO2, economieDecennale);
+    }
+
+    calculerEconomieMensuelle(nbPersonnes, budgetActuel, aElectricite) {
+        // Économies de base selon le nombre de personnes
+        let economieBase = 0;
+        
+        if (nbPersonnes <= 2) {
+            economieBase = 25000; // 25,000 FCFA/mois pour 1-2 personnes
+        } else if (nbPersonnes <= 5) {
+            economieBase = 48000; // 48,000 FCFA/mois pour 3-5 personnes
+        } else if (nbPersonnes <= 8) {
+            economieBase = 65000; // 65,000 FCFA/mois pour 6-8 personnes
+        } else {
+            economieBase = 85000; // 85,000 FCFA/mois pour 9+ personnes
+        }
+
+        // Ajustement si pas d'électricité CIE
+        if (!aElectricite) {
+            // Réduction de 40% si pas d'électricité CIE (pas d'économies sur l'électricité)
+            economieBase *= 0.6;
+        }
+
+        // Si le budget actuel est inférieur aux économies estimées, on prend le budget actuel
+        return Math.min(economieBase, budgetActuel * 0.8); // Maximum 80% du budget actuel
+    }
+
+    calculerROI(economieAnnuelle) {
+        if (economieAnnuelle <= 0) return 0;
+        return (this.prixMultibatec / economieAnnuelle).toFixed(1);
+    }
+
+    calculerImpactCO2(nbPersonnes) {
+        // Estimation CO2 évité en tonnes par an
+        const baseCO2 = 2.5; // tonnes de base
+        const facteurPersonnes = nbPersonnes * 0.15; // +0.15 tonne par personne
+        return (baseCO2 + facteurPersonnes).toFixed(1);
+    }
+
+    afficherResultats(economieMensuelle, economieAnnuelle, roi, impactCO2, economieDecennale) {
+        // Formatage des nombres avec séparateurs de milliers
+        const formatter = new Intl.NumberFormat('fr-FR');
+
+        document.getElementById('economieMensuelle').textContent = 
+            `${formatter.format(Math.round(economieMensuelle))} FCFA/mois`;
+        
+        document.getElementById('economieAnnuelle').textContent = 
+            `= ${formatter.format(Math.round(economieAnnuelle))} FCFA/an`;
+        
+        document.getElementById('roi').textContent = 
+            economieAnnuelle > 0 ? `${roi} ans` : "Non calculable";
+        
+        document.getElementById('impactCO2').textContent = 
+            `${impactCO2} T CO₂ évitées/an`;
+        
+        document.getElementById('economieDecennale').textContent = 
+            `${formatter.format(Math.round(economieDecennale))} FCFA économisés`;
+
+        // Animation des résultats
+        this.animerResultats();
+    }
+
+    animerResultats() {
+        const resultats = document.getElementById('resultats');
+        resultats.style.opacity = '0';
+        resultats.style.transform = 'translateY(10px)';
+        
+        setTimeout(() => {
+            resultats.style.transition = 'all 0.5s ease';
+            resultats.style.opacity = '1';
+            resultats.style.transform = 'translateY(0)';
+        }, 100);
+    }
+}
+
+// Initialisation du calculateur
+document.addEventListener('DOMContentLoaded', function() {
+    new CalculateurMultibatec();
+});
+    </script>
+</body>
+</html>
